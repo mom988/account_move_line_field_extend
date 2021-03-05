@@ -15,11 +15,11 @@
 <!--            </xpath>-->
 <!--        </field>-->
 <!--      </record>-->
-      <record id="account.view_move_line_field_extend_tree" model="ir.ui.view">
+      <record id="account_view_move_line_field_extend_tree" model="ir.ui.view">
         <field name="name">account.move.line.extend.tree</field>
         <field name="model">account.move.line</field>
         <field name="inherit_id" ref="account.view_move_line_tree"/>
-        <field name="mode">extension</field>
+<!--        <field name="mode">extension</field>-->
         <field name="arch" type="xml">
             <field name="partner_id" position="after">
               <field name="product_id"/>
@@ -27,6 +27,16 @@
             </field>
         </field>
       </record>
+<!--      <record id="marketing_participant_view_form" model="ir.ui.view">-->
+<!--        <field name="name">marketing.participant.view.form</field>-->
+<!--        <field name="model">marketing.participant</field>-->
+<!--        <field name="inherit_id" ref="marketing_automation.marketing_participant_view_form"/>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <xpath expr="//span[hasclass('o_ma_type')]/i" position="after">-->
+<!--                <i class="fa fa-comment" t-elif="record.activity_type.raw_value == 'sms'" title="SMS" role="img" aria-label="SMS"/>-->
+<!--            </xpath>-->
+<!--        </field>-->
+<!--      </record>-->
     <!-- explicit list view definition -->
 <!--
     <record model="ir.ui.view" id="rsh_account.list">
